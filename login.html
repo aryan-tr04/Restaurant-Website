@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Login Page</title>
+    <style>
+        :root {
+            --green: #27ae60;
+            --black: #192a56;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+        }
+
+        .sub-heading {
+            text-align: center;
+            color: var(--green);
+            font-size: 2.5rem;
+            padding-top: 1rem;
+        }
+
+        .heading {
+            text-align: center;
+            color: var(--black);
+            font-size: 3rem;
+            padding-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            margin-top: 1rem;
+            display: inline-block;
+            font-size: 1.7rem;
+            color: #fff;
+            background: var(--black);
+            border-radius: .5rem;
+            cursor: pointer;
+            padding: .8rem 3rem;
+        }
+
+        .btn:hover {
+            background: var(--green);
+            letter-spacing: .1rem;
+        }
+
+        .login form {
+            width: 40rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            border: .1rem solid rgba(112, 44, 44, 0.2);
+            background: #fff;
+            padding: 1.5rem;
+            margin: 0 auto;
+        }
+
+        .login form .inputBox {
+            display: block;
+        }
+
+        .login form .inputBox .input {
+            width: 50%;
+        }
+
+        .login form .inputBox .input span {
+            display: block;
+            padding: .5rem 0;
+            font-size: 1.5rem;
+            color: var(--black);
+        }
+
+        .login form .inputBox .input input {
+            background: #eee;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-size: 1.5rem;
+            color: var(--black);
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        /* .login form .inputBox .input input:focus {
+            border: .1rem solid var(--green);
+        } */
+
+        .login form .btn {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login" id="login">
+
+        <h3 class="sub-heading">Order Now</h3>
+        <h1 class="heading">Foodie.Com</h1>
+
+        <form action="index.php" method="post">
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Email id</span>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input">
+                    <span>Password</span>
+                    <input type="password" id="password" name="password" minlength = "5" placeholder="Enter your password" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn" id="movetohome">Login</button>
+
+        </form>
+    </section>   
+</body>
+
+</html>
